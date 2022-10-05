@@ -1,0 +1,50 @@
+
+.headerItem{
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+
+}
+
+.title{
+  display: inline-block;
+  margin: 0;
+  color:white;
+  opacity: 0;
+  transition: opacity,.2s;
+  padding-top:.5rem;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.headerItem:hover .title{
+  opacity: 1
+}
+
+.icon {
+  height:1.5rem;
+  width:auto;
+  padding:0;
+  margin-bottom: 0;
+  color:white;
+  position: relative;
+
+}
+
+.headerItem:hover .icon{
+  animation-name: anim;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function:cubic-bezier(.63,.22,.13,.87);
+}
+
+@keyframes anim {
+  0% {top: 0}
+  25% {top:10px}
+  50% {top:0px}
+  75% {top:10px}
+  100% {top:0}
+}

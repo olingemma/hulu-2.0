@@ -1,0 +1,22 @@
+.nav{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  justify-content: space-around;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.nav::-webkit-scrollbar {
+  display: none;
+}
+.navItem{
+  padding:0 1rem;
+  transition: all, .5s;
+
+}
+.navItem:active{
+  color:#C84B31
+}
+.navItem:hover{
+  transform: scale(1.2,1.2);
+}
